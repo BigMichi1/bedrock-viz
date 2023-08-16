@@ -16,7 +16,7 @@ RUN cmake .. && \
     make && \
     make install
 
-FROM node:20.5.0-bullseye-slim
+FROM node:20.5.1-bullseye-slim
 
 RUN apt-get update && \
     apt-get install --no-install-recommends -y libboost-program-options1.74.0 libpng16-16 && \
