@@ -12,3 +12,8 @@ updates:
       interval: "weekly"
     assignees:
       - "bigmichi1"
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
