@@ -8,6 +8,8 @@ rm -rf build
 mkdir -p build
 cd build
 
+ls -la /usr/include/boost
+
 cmake -DCMAKE_VERBOSE_MAKEFILE=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS= -DCMAKE_C_FLAGS= ..
 make
 make install
