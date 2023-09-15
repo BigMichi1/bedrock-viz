@@ -7,14 +7,7 @@ COPY . /bedrock-viz
 
 WORKDIR /bedrock-viz
 
-RUN patch -p0 < patches/leveldb-1.22.patch && \
-    patch -p0 < patches/pugixml-disable-install.patch && \
-    mkdir -p build
-
-WORKDIR /bedrock-viz/build
-RUN cmake .. && \
-    make && \
-    make install
+RUN ./buildscript.sh
 
 FROM node:20.6.1-bullseye-slim@sha256:ee905d8492c443aebe41f4cc525ebabefef757df43556c444be67391cc031cba
 
