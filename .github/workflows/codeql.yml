@@ -60,7 +60,7 @@ jobs:
           # Prefix the list here with "+" to use these queries and those in the config file.
 
       - name: Install build-dependencies
-        uses: awalsh128/cache-apt-pkgs-action@1.3.0 # v1.3.0
+        uses: awalsh128/cache-apt-pkgs-action@v1.3.0 # v1.3.0
         with:
           packages: cmake g++ build-essential libboost-program-options1.74-dev libpng++-dev zlib1g-dev
           version: 1.0
