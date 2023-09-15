@@ -60,10 +60,9 @@ jobs:
           # Prefix the list here with "+" to use these queries and those in the config file.
 
       - name: Install build-dependencies
-        uses: awalsh128/cache-apt-pkgs-action@v1.3.0 # v1.3.0
+        uses: ConorMacBride/install-package@v1.1.0 # v1.1.0
         with:
-          packages: cmake g++ build-essential libboost-program-options1.74-dev libpng++-dev zlib1g-dev
-          version: 1.0
+          apt: cmake g++ build-essential libboost-program-options1.74-dev libpng++-dev zlib1g-dev
 
       # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
       # If this step fails, then you should remove it and run the build manually (see below)
