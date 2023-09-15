@@ -1,8 +1,5 @@
 #!/bin/bash
 
-apt-get update
-apt-get install --no-install-recommends -y cmake g++ build-essential libboost-program-options1.74-dev libpng++-dev zlib1g-dev
-
 patch -p0 < patches/leveldb-1.22.patch
 patch -p0 < patches/pugixml-disable-install.patch
 
