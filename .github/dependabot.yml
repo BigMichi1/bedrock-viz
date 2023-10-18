@@ -6,14 +6,25 @@ updates:
       interval: "daily"
     assignees:
       - "bigmichi1"
+    labels:
+      - "dependencies"
+      # Add default Kodiak `merge.automerge_label`
+      - "automerge"
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
       interval: "weekly"
     assignees:
       - "bigmichi1"
-
+    labels:
+      - "dependencies"
+      # Add default Kodiak `merge.automerge_label`
+      - "automerge"
   - package-ecosystem: npm
     directory: /
     schedule:
       interval: daily
+    labels:
+      - "dependencies"
+      # Add default Kodiak `merge.automerge_label`
+      - "automerge"
