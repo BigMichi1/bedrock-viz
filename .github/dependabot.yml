@@ -8,8 +8,8 @@ updates:
       - "bigmichi1"
     labels:
       - "dependencies"
-      # Add default Kodiak `merge.automerge_label`
       - "automerge"
+      - "github-actions"
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
@@ -18,13 +18,13 @@ updates:
       - "bigmichi1"
     labels:
       - "dependencies"
-      # Add default Kodiak `merge.automerge_label`
       - "automerge"
+      - "docker"
   - package-ecosystem: npm
     directory: /
     schedule:
       interval: daily
     labels:
       - "dependencies"
-      # Add default Kodiak `merge.automerge_label`
       - "automerge"
+      - "npm"
