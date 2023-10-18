@@ -5,6 +5,7 @@ version = 1
 [update]
 always = true # default: false
 require_automerge_label = false # default: true
+ignored_usernames = ["dependabot"]
 
 [merge]
 automerge_label = "ship it!"
@@ -18,8 +19,3 @@ usernames = ["dependabot"]
 # note: remove the "[bot]" suffix from GitHub Bot usernames.
 # Instead of "dependabot[bot]" use "dependabot".
 auto_approve_usernames = ["dependabot"]
-
-# if using `update.always`, add dependabot to `update.ignore_usernames` to allow
-# dependabot to update and close stale dependency upgrades.
-[update]
-ignored_usernames = ["dependabot"]
