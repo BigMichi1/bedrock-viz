@@ -1,4 +1,4 @@
-FROM debian:bullseye@sha256:71f0e09d55a4042ddee1f114a0838d99266e185bf33e71f15c15bf6b9545a9a0 as builder
+FROM debian:bullseye@sha256:71cb300d5448af821aedfe63afd55ba05f45a6a79f00dcd131b96b780bb99fe4 as builder
 
 RUN apt-get update && \
     apt-get install --no-install-recommends -y cmake g++ build-essential libboost-program-options1.74-dev libpng++-dev zlib1g-dev
