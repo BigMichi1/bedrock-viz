@@ -9,7 +9,7 @@ WORKDIR /bedrock-viz
 
 RUN ./buildscript.sh
 
-FROM node:22.2.0-bullseye-slim@sha256:5baa25a7a7d4fde6ae7180db579f930748b9c6cd9c2ccf0065b9ea2c61585405
+FROM node:22.3.0-bullseye-slim@sha256:2a72c62e0bdbe4cfdbf7df11f6ef786fe87dce12780090ea41e931f40998a47d
 
 RUN apt-get update && \
     apt-get install --no-install-recommends -y libboost-program-options1.74.0 libpng16-16 && \
